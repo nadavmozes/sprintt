@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sprintt/static/css/main.0e634a65.chunk.css",
+    "main.js": "/sprintt/static/js/main.b0bcd6d3.chunk.js",
+    "main.js.map": "/sprintt/static/js/main.b0bcd6d3.chunk.js.map",
+    "runtime-main.js": "/sprintt/static/js/runtime-main.9bbd99fd.js",
+    "runtime-main.js.map": "/sprintt/static/js/runtime-main.9bbd99fd.js.map",
+    "static/js/2.7b2acfc4.chunk.js": "/sprintt/static/js/2.7b2acfc4.chunk.js",
+    "static/js/2.7b2acfc4.chunk.js.map": "/sprintt/static/js/2.7b2acfc4.chunk.js.map",
+    "static/js/3.3f84068b.chunk.js": "/sprintt/static/js/3.3f84068b.chunk.js",
+    "static/js/3.3f84068b.chunk.js.map": "/sprintt/static/js/3.3f84068b.chunk.js.map",
+    "index.html": "/sprintt/index.html",
+    "service-worker.js": "/sprintt/service-worker.js",
+    "service-worker.js.map": "/sprintt/service-worker.js.map",
+    "static/css/main.0e634a65.chunk.css.map": "/sprintt/static/css/main.0e634a65.chunk.css.map",
+    "static/js/2.7b2acfc4.chunk.js.LICENSE.txt": "/sprintt/static/js/2.7b2acfc4.chunk.js.LICENSE.txt",
+    "static/media/home_icon.18cd2f49.svg": "/sprintt/static/media/home_icon.18cd2f49.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9bbd99fd.js",
+    "static/js/2.7b2acfc4.chunk.js",
+    "static/css/main.0e634a65.chunk.css",
+    "static/js/main.b0bcd6d3.chunk.js"
+  ]
+}
