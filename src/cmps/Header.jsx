@@ -1,25 +1,19 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
+import logo from '../assets/imgs/logo.png';
+import home from '../assets/imgs/home_icon.svg';
+
 
 class _Header extends Component {
     render() {
-        const {loggedInUser} = this.props;
         return <header>
             <nav>
-                <NavLink exact to="/"><span role="img" aria-label="logo">🙏</span></NavLink>
-                <NavLink to="/login">Login</NavLink>
-                <NavLink exact to="/">User Reviews</NavLink>
-                <NavLink to="/chat">Chat Room</NavLink>
+                <NavLink exact to="/"><img src={logo} alt="logo" class="logo"/></NavLink>
+                <NavLink to="/login"><img src={home} alt="home" class="home"/>Home</NavLink>
+                <NavLink exact to="/">Browse</NavLink>
+                <NavLink to="/chat">Liked songs</NavLink>
             </nav>
-            {loggedInUser && <span className="loggedin-user">
-
-                <Link to={`user/${loggedInUser._id}`}>
-                    {loggedInUser.fullname}
-                </Link>
-                
-                <span>{loggedInUser.score || 0}</span>
-            </span>}
         </header>
     }
 
