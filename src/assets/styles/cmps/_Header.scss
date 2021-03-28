@@ -1,9 +1,7 @@
 header {
-    background-color: $clr5;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-
     .loggedin-user {
         background-color: $clr1;
         padding: 2px 8px;
@@ -18,17 +16,17 @@ header {
         }
     }
 }
-nav {
-    background-color: $clr4;
-    padding: 5px 0;
-}
+
 nav a:not(:first-child) {
-    border-top: 1px solid $clr1;
-    padding: 0 5px;
     margin: 10px;
 }
 nav .active {
     color: $clr1;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
 }
 .logo {
     width: 109px;
@@ -41,3 +39,18 @@ nav .active {
     top: 136px;
     border-radius: 0px;
 }
+.browse {
+    height: 21.596879959106445px;
+    width: 20.18400001525879px;
+    left: 55px;
+    top: 136px;
+    border-radius: 0px;
+}
+.liked-songs {
+    height: 21.596879959106445px;
+    width: 20.18400001525879px;
+    left: 55px;
+    top: 136px;
+    border-radius: 0px;
+}
+

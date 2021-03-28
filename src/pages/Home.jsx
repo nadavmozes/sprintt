@@ -47,7 +47,7 @@ class _Home extends Component {
     return (
       <div className="home">
         <h1>Reviews and Gossip</h1>
-        {this.props.reviews && <ul className="review-list">
+        {/* {this.props.reviews && <ul className="review-list">
           {this.props.reviews.map(review => (
             <li key={review._id}>
               { this.canRemove(review) &&
@@ -90,7 +90,7 @@ class _Home extends Component {
             ></textarea>
             <button>Submit</button>
           </form>}
-        <hr />
+        <hr /> */}
       </div>
     )
   }
