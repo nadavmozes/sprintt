@@ -1,27 +1,22 @@
-header {
+.nav-bar {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    .loggedin-user {
-        background-color: $clr1;
-        padding: 2px 8px;
-        border-radius: 1em;
-        align-self: flex-end;
-        color: whitesmoke;
-        span {
-            background-color: $clr2;
-            padding: 4px;
-            margin: 10px;
-            border-radius: 50%;
-        }
-    }
+    height: 1080px;
+    width: 270px;
+    left: -1px;
+    top: 0px;
+    border-radius: 0px;
 }
 
 nav a:not(:first-child) {
     margin: 10px;
 }
 nav .active {
-    color: $clr1;
+    background: rgba(29, 185, 84, 0.15);
+    border-radius: 10px;
+    height: 55px;
+    width: 210px;
 }
 nav {
     display: flex;
@@ -53,4 +48,3 @@ nav {
     top: 136px;
     border-radius: 0px;
 }
-

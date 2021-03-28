@@ -45,52 +45,8 @@ class _Home extends Component {
 
   render() {
     return (
-      <div className="home">
-        <h1>Reviews and Gossip</h1>
-        {/* {this.props.reviews && <ul className="review-list">
-          {this.props.reviews.map(review => (
-            <li key={review._id}>
-              { this.canRemove(review) &&
-                <button onClick={() => this.onRemove(review._id)}>X</button>}
-              <p>
-                About:
-                <Link to={`user/${review.aboutUser._id}`}>
-                  {review.aboutUser.fullname}
-                </Link>
-              </p>
-              <h3>{review.txt}</h3>
-
-              <p>
-                By:
-                <Link to={`user/${review.byUser._id}`}>
-                  {review.byUser.fullname}
-                </Link>
-              </p>
-            </li>
-          ))}
-        </ul>}
-        {this.props.users && this.props.loggedInUser &&
-          <form onSubmit={this.addReview}>
-            <select
-              onChange={this.handleChange}
-              value={this.state.reviewToEdit.aboutUserId}
-              name="aboutUserId"
-            >
-              <option value="">Select User</option>
-              {this.props.users.map(user => (
-                <option key={user._id} value={user._id}>
-                  {user.fullname}
-                </option>
-              ))}
-            </select>
-            <textarea
-              name="txt"
-              onChange={this.handleChange}
-              value={this.state.reviewToEdit.txt}
-            ></textarea>
-            <button>Submit</button>
-          </form>}
-        <hr /> */}
+      <div className="main-playlist">
+        <h1>PlayList</h1>
       </div>
     )
   }

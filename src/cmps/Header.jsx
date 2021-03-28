@@ -9,13 +9,15 @@ import likedsongs from '../assets/imgs/likeds.svg';
 
 class _Header extends Component {
     render() {
-        return <header>
-            <nav>
-                <NavLink exact to="/"><img src={logo} alt="logo" className="logo"/></NavLink>
-                <NavLink to="/"><img src={home} alt="home" className="home"/>Home</NavLink>
-                <NavLink exact to="/browse"><img src={browse} alt="browse" className="browse"/>Browse</NavLink>
-                <NavLink to="/liked-songs"><img src={likedsongs} alt="liked-songs" className="liked-songs"/>Liked songs</NavLink>
-            </nav>
+        return <header className="nav-bar">
+        <div className="main-nav">
+                <NavLink to="/"><img src={logo} alt="logo" className="logo" /></NavLink>
+                <nav>
+                    <NavLink to="/"><img src={home} alt="home" className="home" />Home</NavLink>
+                    <NavLink to="/browse"><img src={browse} alt="browse" className="browse" />Browse</NavLink>
+                    <NavLink to="/liked-songs"><img src={likedsongs} alt="liked-songs" className="liked-songs" />Liked songs</NavLink>
+                </nav>
+            </div>
         </header>
     }
 
