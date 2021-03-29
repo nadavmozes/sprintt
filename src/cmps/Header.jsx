@@ -10,8 +10,8 @@ import likedsongs from '../assets/imgs/likeds.svg';
 class _Header extends Component {
     render() {
         return <header className="nav-bar">
-        <div className="main-nav">
-                <NavLink to="/"><img src={logo} alt="logo" className="logo" /></NavLink>
+            <div className="main-nav">
+                <img src={logo} alt="logo" className="logo" />
                 <nav>
                     <NavLink to="/"><img src={home} alt="home" className="home" />Home</NavLink>
                     <NavLink to="/browse"><img src={browse} alt="browse" className="browse" />Browse</NavLink>
