@@ -13,7 +13,7 @@ export class Home extends React.Component {
     songs: [],
   }
   componentDidMount() {
-    this.loadSongs()
+    // this.loadSongs()
   }
   loadSongs = () => {
     console.log('songs', this.songs)
