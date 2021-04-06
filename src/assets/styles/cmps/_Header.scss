@@ -1,50 +1,80 @@
 .nav-bar {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
     height: 1080px;
     width: 270px;
-    left: -1px;
-    top: 0px;
-    border-radius: 0px;
+}
+
+nav {
+    position: relative;
+    top: -60px;
 }
 
 nav a {
-    margin: 10px;
-}
-nav .active {
-    background: rgba(29, 185, 84, 0.15);
-    border-radius: 10px;
-    height: 55px;
-    width: 210px;
-}
-nav {
     display: flex;
-    flex-direction: column;
-    background-color: #fff;
+    margin-bottom: 21px;
+    width: 210px;
+    height: 55px;
+    left: 25px;
+    top: 120px;
+    border-radius: 10px;
+    position: relative;
 }
+nav a.active {
+    background: rgba(29, 185, 84, 0.15);
+}
+// .home-link {background: rgba(29, 185, 84, 0.15);}
+
 .logo {
+    position: relative;
     width: 109px;
     height: 60px;
+    left: 55px;
+    top: 49px;
 }
 .home {
-    height: 21.596879959106445px;
-    width: 20.18400001525879px;
-    left: 55px;
-    top: 136px;
-    border-radius: 0px;
+    display: flex;
+    img {
+        height: 21.596879959106445px;
+        width: 20.18400001525879px;
+        left: 55px;
+        top: 120px;
+        border-radius: 0px;
+        margin-right: 22.82px;
+        margin-left: 30px;
+        align-self: center;
+    }
+    p {
+        margin: auto;
+    }
 }
 .browse {
-    height: 21.596879959106445px;
-    width: 20.18400001525879px;
-    left: 55px;
-    top: 136px;
-    border-radius: 0px;
+    display: flex;
+    img {
+        height: 21.596879959106445px;
+        width: 20.18400001525879px;
+        left: 55px;
+        top: 136px;
+        border-radius: 0px;
+        margin-right: 20.6px;
+        margin-left: 30px;
+        align-self: center;
+    }
+    p {
+        margin: auto;
+    }
 }
 .liked-songs {
-    height: 21.596879959106445px;
-    width: 20.18400001525879px;
-    left: 55px;
-    top: 136px;
-    border-radius: 0px;
+    display: flex;
+    img {
+        height: 21.596879959106445px;
+        width: 20.18400001525879px;
+        left: 55px;
+        top: 136px;
+        border-radius: 0px;
+        margin-right: 14.34px;
+        margin-left: 30px;
+        align-self: center;
+    }
+    p {
+        margin: auto;
+    }
 }

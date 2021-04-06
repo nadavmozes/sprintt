@@ -1,41 +1,35 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React from 'react'
+import { songService } from "../services/songsService"
+import { SongList } from "../cmps/SongList";
 
-import { loadReviews, addReview, removeReview } from '../store/actions/reviewActions.js'
-import { loadUsers } from '../store/actions/userActions.js'
-import { Link } from 'react-router-dom'
-
-class _Home extends Component {
+export class Home extends React.Component {
   state = {
- 
+    song: {
+      "description": "Listen to the best songs from the 60's",
+      "image_url": "https://i.scdn.co/image/ab67706f000000035337e18dc6803780d806efba",
+      "name": "Best of 60's",
+      "playlist_id": "3533"
+    },
+    songs: [],
   }
   componentDidMount() {
-
+    this.loadSongs()
   }
-
+  loadSongs = () => {
+    console.log('songs', this.songs)
+    songService.query()
+      .then(songs => this.setState({ songs }))
+  };
 
 
   render() {
     return (
       <div className="main-playlist">
-        <h1>PlayList</h1>
+        <SongList songs={songs} />
+        <h2>Recently played</h2>
+        <h2>Featured playlists</h2>
+        <h2>Mood</h2>
       </div>
     )
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    reviews: state.reviewModule.reviews,
-    users: state.userModule.users,
-    loggedInUser: state.userModule.loggedInUser
-  }
-}
-const mapDispatchToProps = {
-  loadReviews,
-  loadUsers,
-  addReview,
-  removeReview
-}
-
-export const Home = connect(mapStateToProps, mapDispatchToProps)(_Home)

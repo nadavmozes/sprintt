@@ -1,7 +1,8 @@
 .app {
     display: flex;
-    width: 1440px;
-    height: 1920px;
+    max-width: 1920px;
+    height: 1080px;
+    
 }
 main {
     flex-grow: 1;

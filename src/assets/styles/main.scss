@@ -3,19 +3,17 @@
 @import "setup/functions";
 @import "setup/mixins";
 @import "setup/typography";
-
 // Basics
 @import "basics/helpers";
 @import "basics/layout";
 @import "basics/base";
 @import "basics/links";
 @import "basics/forms";
-
-
-
-
 // Components
+@import "views/HomePage";
 @import "cmps/Header";
-@import "cmps/ReviewList";
+@import "cmps/Browse";
+@import "cmps/LikedSongs";
+@import "cmps/ActionBar";
 
 
