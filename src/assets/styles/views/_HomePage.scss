@@ -1,28 +1,48 @@
 .main-playlist {
-    // overflow: auto;
-    position: relative;
+    // position: absolute;
+    overflow: auto;
     height: 100%;
 }
 h2 {
-    position: relative;
     font-weight: 400;
 }
 
+img {
+    width: 147.71px;
+    height: 147.71px;
+    border-radius: 10px;
+}
+.playlist {
+    display: flex;
+}
 h2:first-child {
     left: 141px;
     top: 120px;
-    width: 207px;
+    width: 224px;
     margin: 0;
+    display: inline-block;
 }
 h2:nth-child(2) {
     left: 141px;
     top: 318px;
-    width:232px;
+    width: 67px;
     margin: 0;
+    display: inline-block;
 }
 h2:nth-child(3) {
     left: 141px;
     top: 604px;
-    width:67px;
+    width: 232px;
     margin: 0;
+    display: inline-block;
+}
+
+.right-arrow {
+    width: 11.05px;
+    height: 11.05px;
+}
+
+.left-arrow {
+    width: 11.05px;
+    height: 11.05px;
 }

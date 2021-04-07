@@ -12,12 +12,12 @@ export class SongPreview extends React.Component {
             song: this.props.song
         })
     }
-    redner() {
+    render() {
         const { song } = this.props
-        return <article>
+        return <ul className="songs-list">
             <img src={song.image_url} alt="" />
-            <p>{song.name}</p>
-            <p>{song.description}</p>
-        </article>
+            <p className="song-name">{song.name}</p>
+            <p className="song-desc">{song.description}</p>
+        </ul>
     }
 }

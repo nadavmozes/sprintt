@@ -1,19 +1,15 @@
 import React from 'react'
 import { songService } from "../services/songsService"
 import { SongList } from "../cmps/SongList";
+import RightArrow from "../assets/imgs/right-arrow.svg";
+import LeftArrow from "../assets/imgs/left-arrow.svg"
 
 export class Home extends React.Component {
   state = {
-    song: {
-      "description": "Listen to the best songs from the 60's",
-      "image_url": "https://i.scdn.co/image/ab67706f000000035337e18dc6803780d806efba",
-      "name": "Best of 60's",
-      "playlist_id": "3533"
-    },
     songs: [],
   }
   componentDidMount() {
-    // this.loadSongs()
+    this.loadSongs()
   }
   loadSongs = () => {
     console.log('songs', this.songs)
@@ -25,10 +21,30 @@ export class Home extends React.Component {
   render() {
     return (
       <div className="main-playlist">
-        <SongList songs={songs} />
-        <h2>Recently played</h2>
-        <h2>Featured playlists</h2>
-        <h2>Mood</h2>
+        <div className="flex space-between">
+          <h2>Recently played</h2>
+          <div>
+            <img src={LeftArrow} alt="left-arrow" className="left-arrow" onClick />
+            <img src={RightArrow} alt="right-arrow" className="right-arrow" onClick />
+          </div>
+        </div>
+        <SongList songs={this.state.songs} />
+        <div className="flex space-between">
+          <h2>Featured playlists</h2>
+          <div>
+            <img src={LeftArrow} alt="left-arrow" className="left-arrow" />
+            <img src={RightArrow} alt="right-arrow" className="right-arrow" />
+          </div>
+        </div>
+        <SongList songs={this.state.songs} />
+        <div className="flex space-between">
+          <h2>Mood</h2>
+          <div>
+            <img src={LeftArrow} alt="left-arrow" className="left-arrow" />
+            <img src={RightArrow} alt="right-arrow" className="right-arrow" />
+          </div>
+        </div>
+          <SongList songs={this.state.songs} />
       </div>
     )
   }
